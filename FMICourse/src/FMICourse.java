@@ -1,13 +1,10 @@
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class FMICourse {
     public FMICourse() {
     }
 
-    @Test
-    public void test() {
 
-    }
 
     public static void main(String[] args) {
         int i = 1;
