@@ -1,4 +1,4 @@
-package week3.task0;
+package labs.week3.task0;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

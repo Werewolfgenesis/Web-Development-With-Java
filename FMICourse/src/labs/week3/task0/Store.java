@@ -1,6 +1,4 @@
-package week3.task0;
-
-import week3.task0.Book;
+package labs.week3.task0;
 
 import java.time.LocalDate;
 import java.util.List;

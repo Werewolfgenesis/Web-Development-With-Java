@@ -1,4 +1,4 @@
-package week3.task1;
+package labs.week3.task1;
 
 import java.time.LocalDate;
 import java.util.List;
