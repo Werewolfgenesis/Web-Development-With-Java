@@ -1,6 +1,7 @@
 package labs.week3.task1;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 public abstract class File {
     private String name;
@@ -32,9 +33,10 @@ public abstract class File {
         }
     }
 
-    public abstract File copy(String newLocation);
+    //public abstract File copy(String newLocation);
 
     public void delete() throws Exception {
+        System.out.println("Deleting file...");
         if (isDeleted) {
             throw new Exception("File already deleted!");
         }
@@ -42,7 +44,7 @@ public abstract class File {
     }
 
     public boolean execute() throws Exception {
-        if (this.isDeleted){
+        if (this.isDeleted) {
             throw new Exception();
         }
         return true;
@@ -58,6 +60,10 @@ public abstract class File {
 
     @Override
     public String toString() {
+        if (isDeleted){
+            return "File " +
+                     getName() + " has been deleted!";
+        }
         return "File{" +
                 "name='" + getName() + '\'' +
                 ", location='" + location + '\'' +

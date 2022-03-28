@@ -16,30 +16,31 @@ public class Exercise {
     }
 
     // T2) Write a method to remove the third element from an array list.
-    private static void removeThirdElem(ArrayList<Integer> arrayList){
+    private static void removeThirdElem(ArrayList<Integer> arrayList) {
         arrayList.remove(2);
     }
 
     // T3) Write a method to search an element in a list.
-    private static boolean isPart(int elem, ArrayList<Integer> arrayList){
+    private static boolean isPart(int elem, ArrayList<Integer> arrayList) {
         return arrayList.contains(elem);
     }
 
     // T4) Write a method to sort a given array list. (list of String/Integer/Dog).
-    private static void sortArr(ArrayList<String> arrayList){
+    private static void sortArr(ArrayList<String> arrayList) {
         arrayList.stream().sorted();
     }
+
     // Implement Dog class with attribute breed and weight, sort the array by weight property.
     private class Dog implements Comparator {
         private double weight;
         private String breed;
 
-        public Dog(){
+        public Dog() {
             this.weight = -1;
             this.breed = "NZBRAT";
         }
 
-        public boolean heavier(Dog d){
+        public boolean heavier(Dog d) {
             return this.weight > d.weight;
         }
 
@@ -54,8 +55,7 @@ public class Exercise {
     }
 
 
-
-    private static void sortDogs(ArrayList<Dog> dogs){
+    private static void sortDogs(ArrayList<Dog> dogs) {
     }
     // Tip: implement the task with Comparator and Comparable
 

@@ -3,14 +3,14 @@ package labs.week3.task1;
 import java.time.LocalDate;
 import java.util.List;
 
-public class ExecutableFile extends File{
+public class ExecutableFile extends File {
     protected List<String> requiredResources;
     protected LocalDate lastExecutionDate;
 
-    @Override
-    public File copy(String newLocation) {
-
-        lastExecutionDate = LocalDate.now();
-        return  this;
+    public ExecutableFile(String name, String location, LocalDate creationDate, boolean isDeleted,
+                          List<String> requiredResources, LocalDate lastExecutionDate) {
+        super(name, location, creationDate, isDeleted);
+        this.requiredResources = requiredResources;
+        this.lastExecutionDate = lastExecutionDate;
     }
 }
